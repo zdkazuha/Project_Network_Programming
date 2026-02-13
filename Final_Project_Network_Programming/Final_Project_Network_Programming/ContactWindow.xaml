@@ -1,0 +1,64 @@
+﻿<Window x:Class="Final_Project_Network_Programming.ContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final_Project_Network_Programming"
+        mc:Ignorable="d"
+        Title="ContactWindow" Height="430" Width="450">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Width" Value="212"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Width="100" Height="30" FontSize="18" Content="Contact ::" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5 10 0 0"/>
+
+        <ListBox Name="ContactListBox"
+                 ItemsSource="{Binding ListContact}"
+                 SelectionChanged="ContactListBox_SelectionChanged"
+                 Width="200"
+                 Height="250"
+                 FontSize="18"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Margin="10 40 0 0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding CustomName}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Name}" FontStyle="Italic"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Label Width="100" Height="30" FontSize="18" Content="Info ::" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 10 65 0"/>
+
+        <ListBox Name="ContactInfoListBox"
+                 Width="212"
+                 Height="250"
+                 FontSize="18"
+                 HorizontalAlignment="Right"
+                 VerticalAlignment="Top"
+                 Margin="0 40 10 0"/>
+
+        <Button Click="AddContactBtn"    Margin="10 0 10 70" Background="#FF02D602" Content="Add"    HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button Click="DeleteContactBtn" Margin="10 0 10 40" Background="Red"       Content="Delete" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <TextBox 
+            Name="CustomNameTextBox" 
+            Width="200" 
+            Height="25" 
+            Margin="10 0 10 10" 
+            Background="#FFEDEAEA"
+            FontSize="18" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Bottom"
+            HorizontalContentAlignment="Left" 
+            VerticalContentAlignment="Bottom"/>
+        <Button Click="RenameContactBtn" Margin="10 0 10 10" Content="Rename" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>

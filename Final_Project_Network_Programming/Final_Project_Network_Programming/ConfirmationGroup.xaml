@@ -1,0 +1,81 @@
+﻿<Window x:Class="Final_Project_Network_Programming.ConfirmationGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final_Project_Network_Programming"
+        mc:Ignorable="d"
+        Title="ConfirmationGroup" Height="200" Width="310">
+    <Grid>
+        <Label 
+            Width="295" 
+            Height="35" 
+            Margin="5 10 0 0" 
+            FontSize="18" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            >Ви хочете приєднатисья до групи?</Label>
+        
+        <Label 
+               Width="155" 
+               Height="35" 
+               Margin="5 50 0 0" 
+               FontSize="18" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               Content="Вас приглашає :: "
+               ></Label>
+        <Label Name="UserNameLabel"
+               Width="155" 
+               Height="35" 
+               Margin="145 50 0 0" 
+               FontSize="18" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               Content="UserName"
+               ></Label>
+        <Label
+               Width="155" 
+               Height="35" 
+               Margin="5 80 15 0" 
+               FontSize="18" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left"
+               HorizontalContentAlignment="Left"
+               Content="В групу :: "
+               ></Label>
+        <Label Name="GroupNameLabel" 
+               Width="155" 
+               Height="35" 
+               Margin="145 80 15 0" 
+               FontSize="18" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left"
+               HorizontalContentAlignment="Left"
+               Content="GroupName"
+               ></Label>
+
+        <Button
+            Click="YesBtn"
+            Width="100"
+            Height="30"
+            Margin="10 0 16 10"
+            FontSize="20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Content="Yes"
+            Background="#FF5BF73C"
+            ></Button>
+        <Button
+            Click="NoBtn"
+            Width="100"
+            Height="30"
+            Margin="10 0 10 10"
+            FontSize="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Content="No"
+            Background="Red"
+            ></Button>
+    </Grid>
+</Window>

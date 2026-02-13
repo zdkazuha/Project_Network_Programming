@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final_Project_Network_Programming", "Final_Project_Network_Programming\Final_Project_Network_Programming.csproj", "{102A977F-4016-491C-9E56-C4D9B9D2641F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_Server", "Chat_Server\Chat_Server\Chat_Server.csproj", "{3344059E-4612-4B4A-A55E-ECE3589CE022}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL_Database", "SQL_Database", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		Db_Controller.cs = Db_Controller.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{1EC07471-EE17-4854-82F1-A6FBF02ED8F6}"
+	ProjectSection(SolutionItems) = preProject
+		Contacts.cs = Contacts.cs
+		Group.cs = Group.cs
+		Groups.cs = Groups.cs
+		User.cs = User.cs
+		Сontact.cs = Сontact.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db_Controller", "Db_Controller\Db_Controller.csproj", "{09BFCA3B-E283-42CF-B2A0-7E8915AF40BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{102A977F-4016-491C-9E56-C4D9B9D2641F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102A977F-4016-491C-9E56-C4D9B9D2641F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102A977F-4016-491C-9E56-C4D9B9D2641F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102A977F-4016-491C-9E56-C4D9B9D2641F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3344059E-4612-4B4A-A55E-ECE3589CE022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3344059E-4612-4B4A-A55E-ECE3589CE022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3344059E-4612-4B4A-A55E-ECE3589CE022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3344059E-4612-4B4A-A55E-ECE3589CE022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09BFCA3B-E283-42CF-B2A0-7E8915AF40BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BFCA3B-E283-42CF-B2A0-7E8915AF40BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BFCA3B-E283-42CF-B2A0-7E8915AF40BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BFCA3B-E283-42CF-B2A0-7E8915AF40BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EC07471-EE17-4854-82F1-A6FBF02ED8F6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6B1DD9C-BBD0-4898-B4E2-55B59E719145}
+	EndGlobalSection
+EndGlobal
