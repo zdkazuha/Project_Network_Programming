@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11505.172 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final_Project_Network_Programming", "Final_Project_Network_Programming\Final_Project_Network_Programming.csproj", "{102A977F-4016-491C-9E56-C4D9B9D2641F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Network_Programming", "Final_Project_Network_Programming\Project_Network_Programming.csproj", "{102A977F-4016-491C-9E56-C4D9B9D2641F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_Server", "Chat_Server\Chat_Server\Chat_Server.csproj", "{3344059E-4612-4B4A-A55E-ECE3589CE022}"
 EndProject
